@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Karla-Regular";
-    src: url("/font/Karla-Regular.ttf");
+    src: url("../font/Karla-Regular.ttf");
 }
 
 body{
@@ -86,7 +86,7 @@ body{
 }
 
 .banniere-main strong {
-    background: url(/img/Calque\ 14.png);
+    background: url(../img/Calque\ 14.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center 100%;
@@ -233,7 +233,7 @@ body{
 }
 
 .slider-text button strong {
-        background: url(/img/Calque\ 14.png);
+        background: url(../img/Calque\ 14.png);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center 100%;
