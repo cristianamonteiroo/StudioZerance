@@ -1,0 +1,422 @@
+* { margin: 0; padding: 0; }
+
+@font-face {
+    font-family: "Karla-Regular";
+    src: url("/font/Karla-Regular.ttf");
+}
+
+body{
+    font-family: "Karla-Regular";
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 70px;
+}
+
+.nav-logo{
+    width: 4%;
+    padding-left: 90px;
+}
+
+.nav-logo-text {
+    width: 55%;
+}
+
+.nav-logo img {
+    width: 78px;
+    margin-top: 5px;
+}
+
+.nav-logo-text h1 {
+    margin-top: 20px;
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.nav-elements{
+    width: 29%;
+}
+
+.nav-elements ul {
+    height: 70px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.nav-elements ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.banniere{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 236px;
+}
+
+.banniere-since {
+    display: flex;
+    justify-content: center;
+    margin-top: 147px;
+}
+
+.banniere-since p {
+    font-size: 20px;
+}
+
+.banniere-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 30px auto 0 auto;
+}
+
+.banniere-main h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.banniere-main strong {
+    background: url(/img/Calque\ 14.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    overflow: visible;
+}
+
+.banniere-main h1::after {
+    content: "/>";
+}
+
+.banniere-main h1::before {
+  content: "<";
+}
+
+.portfolio {
+    width: 96%;
+    background: black;
+    padding: 2%;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-title h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.portfolio-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto 0 auto;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-logos img {
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.slider-container{
+    display: flex;
+    width: 100%;
+    height: 1000px;
+}
+
+.slider-more{
+    position: absolute;
+    overflow-x: hidden;
+    width: 90%;
+    z-index: 1;
+}
+
+.slider-more img {
+    width: auto;
+    height: 1000px;
+}
+
+.slider-art {
+    position: absolute;
+    overflow-x: hidden;
+    width: 10%;
+    left: 90%;
+    z-index: 2;
+}
+
+.slider-art img {
+    width: auto;
+    height: 1000px;
+}
+
+.scroll-left {
+    height: 80px;	
+    overflow: hidden;
+    position: relative;
+    background: #ffcd1a;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 85px;
+    text-align: center;	
+    transform:translateX(100%);
+    animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.slider-text h1 {
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.slider-text h3 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.slider-text p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.slider-text button {
+    margin: 22px 0 0 140px;
+    border: #f5f5dc00;
+    background: #8a2be200;
+    font-size: medium;
+}
+
+.slider-text button:hover {
+    font-style: italic;
+}
+
+.slider-text button::after {
+    content: "/>";
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.slider-text button::before {
+  content: "<";
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.slider-text button strong {
+        background: url(/img/Calque\ 14.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center 100%;
+        overflow: visible;
+}
+
+.slider-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 94%;
+    top: 47%;
+}
+
+.slider-button button{
+    font-size: 45px;
+    background: #f0f8ff00;
+    border: #f0f8ff08;
+    cursor: pointer;
+}
+
+.slider-button button:hover {
+    color:#ffcd1a;
+}
+
+.slider-button2 {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 94%;
+    top: 47%;
+}
+
+.slider-button2 button{
+    font-size: 45px;
+    background: #f0f8ff00;
+    border: #f0f8ff08;
+    cursor: pointer;
+}
+
+.slider-button2 button:hover {
+    color:#ffcd1a;
+}
+
+.display1 {
+    display: block;
+    position:absolute;
+    width: 26%;
+    max-width: 400px;
+    right: 10%;
+    top: 30%;
+    background: white;
+    height: 37%; 
+    max-height: 395px;
+}
+
+.display2 {
+    display: none;
+    position:absolute;
+    width: 26%;
+    max-width: 400px;
+    right: 10%;
+    top: 30%;
+    background: white;
+    height: 37%; 
+    max-height: 395px;
+}
+
+
+/* Portrait */
+@media (max-width: 600px) {
+    .nav-logo {
+        position: relative;
+        width: auto;
+        padding-left: 10px;
+    }
+
+    .nav-logo-text {
+        width: auto;
+        margin-left: 50px;
+    }
+
+    .nav-logo img {
+        position: absolute;
+        width: 50px;
+    }
+
+    .nav-elements {
+        display: none;
+    }
+
+    .banniere {
+        padding-bottom: 10px;
+        height: 300px;
+    }
+
+    .banniere-since {
+        margin-top: 40px;
+    }
+
+    .banniere-main h1 {
+        font-size: 30px;
+    }
+
+    .banniere-main {
+        width: 250px;
+        margin: 20px auto 0 auto;
+    }
+
+    .portfolio-title {
+        padding: 25px;
+    }
+
+    .portfolio-logos {
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 30px;
+    }    
+    .portfolio-logos img {
+        width: 68px;
+        height: 18px;
+    }
+
+    .display1 {
+        width: 100%;
+        right: 0%;
+        top: 25%;
+        height: 37%;
+    }
+
+    .slider-button {
+        left: 87%;
+        top: 2%;
+        color:#ffcd1a;
+    }
+
+    .slider-text button {
+        margin: 6px 0 0 100px;
+    }
+
+    .display2 {
+        width: 100%;
+        right: 0%;
+        top: 25%;
+        height: 37%;
+    }
+
+    .slider-button2 {
+        left: 87%;
+        top: 2%;
+        color:#ffcd1a;
+    }
+    
+    .slider-text button {
+        margin: 6px 0 0 100px;
+    }
+
+    .display1 {
+        width: 300px;
+        top: 90px;
+        height: auto;
+        min-height: 380px;
+        right: 10px;
+    }
+
+    .display2 {
+        width: 300px;
+        top: 90px;
+        height: auto;
+        min-height: 380px;
+        right: 10px;
+    }
+
+    .slider-container {
+        height: 550px;
+    }
+
+    .slider-more img {
+        height: 550px;
+    }
+
+    .slider-art img {
+        height: 550px;
+    }
+}
