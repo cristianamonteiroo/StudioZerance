@@ -1,7 +1,7 @@
 # StudioZerance
 Pour lancer le site, vous devez lancer cette commande dans le terminal:
     
-    - git clone https://github.com/cristianamonteiroo/StudioZerance.git
+    git clone https://github.com/cristianamonteiroo/StudioZerance.git
     
 puis aller dans le dossier "src" et cliquer sur le fichier "shopify.html" pour voir le site.
 
